@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"> <!-- Warna latar belakang putih -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PEMESANAN TIKET KERETA API"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <EditText
+            android:id="@+id/et_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIK"
+            android:inputType="number"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NAMA"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <EditText
+            android:id="@+id/et_usia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="USIA"
+            android:inputType="number"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOMOR TELEPON"
+            android:inputType="phone"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="GENDER"
+            android:textColor="#8B4513" /> <!-- Warna font coklat -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_laki_laki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAKI-LAKI"
+                    android:textColor="#8B4513" /> <!-- Warna font coklat -->
+
+                <!-- Warna font coklat -->
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/rb_perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PEREMPUAN"
+                android:textColor="#8B4513" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_kereta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/prompt_pilih_kereta"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <EditText
+            android:id="@+id/et_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HARGA"
+            android:inputType="number"
+            android:focusable="false"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TANGGAL DAN WAKTU"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <EditText
+            android:id="@+id/et_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pilih Tanggal dan Waktu"
+            android:focusable="false"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+
+        <Button
+            android:id="@+id/btn_pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PESAN"
+            android:textColor="#FFFFFF"
+            android:background="#8B4513"/> <!-- Warna tombol coklat dengan teks putih -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIKET BERLAKU SELAMA 5 JAM SEHABIS PEMESANAN"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:textColor="#8B4513"/> <!-- Warna font coklat -->
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

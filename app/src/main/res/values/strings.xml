@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KOMUTER_TIKET</string>
+    <string name="prompt_pilih_kereta">Pilih Kereta</string>
+</resources>
